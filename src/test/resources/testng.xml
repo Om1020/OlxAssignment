@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="OLX" verbose="10">
+    <listeners>
+        <listener class-name="listeners.PriorityInterceptor"/>
+        <listener class-name="listeners.SuiteListener"/>
+        <listener class-name="reporting.listeners.TestNGReportListener"></listener>
+    </listeners>
+    <test thread-count="2" parallel="methods" name="PrimeUser" verbose="10">
+        <classes>
+            <class name="testsuite.tests.MovieSearchTest"></class>
+        </classes>
+    </test> 
+    
+</suite> 
